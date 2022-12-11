@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { AuthService } from 'src/app/shared/auth.service';
 
 @Component({
@@ -11,9 +12,12 @@ export class LoginComponent {
   email : string = '';
   password : string = '';
 
-  constructor(private auth : AuthService) { }
+  constructor(private router: Router, private auth : AuthService) { }
 
   ngOnInit(): void {
+    if (this.auth.logged()){
+      this.router.navigateByUrl('/dashboard');
+    }
   }
 
   login() {
@@ -32,8 +36,8 @@ export class LoginComponent {
     
     this.email = '';
     this.password = '';
-
   }
+
 
   signInWithGoogle() {
     this.auth.googleSignIn();

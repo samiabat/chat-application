@@ -22,6 +22,10 @@ export class AuthService {
     },);
   }
 
+  logged() {
+    return localStorage.getItem('token') != undefined
+  }
+
 
   register(email: string, password: string){
     this.fireauth.createUserWithEmailAndPassword(email, password).then(()=>{

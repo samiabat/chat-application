@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { AuthService } from 'src/app/shared/auth.service';
 
 @Component({
@@ -7,8 +8,11 @@ import { AuthService } from 'src/app/shared/auth.service';
   styleUrls: ['./dashboared.component.css']
 })
 export class DashboaredComponent {
-  constructor(private auth : AuthService) { }
+  constructor(private router: Router,  private auth : AuthService) { }
 
   ngOnInit(): void {
+    if (!this.auth.logged()){
+      this.router.navigateByUrl('/login');
+    }
   }
 }
