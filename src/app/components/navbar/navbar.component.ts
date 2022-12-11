@@ -7,9 +7,23 @@ import { AuthService } from 'src/app/shared/auth.service';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
-  constructor(private auth : AuthService) { }
+  constructor(public auth : AuthService) { }
+
+  notificationsRoute = {
+    link: '/dashboard',
+    label: 'Notifications',
+    icon: 'notifications',
+  }
+
+  mainNavLinks = [
+    { link: 'login', label: 'login', icon: 'login' },
+    { link: 'dahboard', label: 'dashboard', icon: 'home' },
+    { link: 'register', label: 'Register', icon: 'register' },
+  ]
 
   logout(){
     this.auth.logout();
   }
+
+
 }

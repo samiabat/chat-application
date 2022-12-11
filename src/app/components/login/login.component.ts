@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { AuthService } from 'src/app/shared/auth.service';
+import { FormGroup, FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
@@ -8,6 +9,11 @@ import { AuthService } from 'src/app/shared/auth.service';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
+
+  form: FormGroup = new FormGroup({
+    username: new FormControl(''),
+    password: new FormControl(''),
+  });
 
   email : string = '';
   password : string = '';
