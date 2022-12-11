@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "chat-app-babd3": {
+      "hosting": {
+        "chat-app": [
+          "chat-app-babd3"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "chat-app-babd3"
+  }
+}
