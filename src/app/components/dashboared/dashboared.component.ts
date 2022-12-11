@@ -11,8 +11,4 @@ export class DashboaredComponent {
 
   ngOnInit(): void {
   }
-    
-  logout(){
-    this.auth.logout();
-  }
 }

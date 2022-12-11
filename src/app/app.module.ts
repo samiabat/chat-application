@@ -12,13 +12,15 @@ import { RegisterComponent } from './components/register/register.component';
 import { DashboaredComponent } from './components/dashboared/dashboared.component';
 import { FormsModule } from '@angular/forms';
 import { AngularFireModule } from '@angular/fire/compat';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     RegisterComponent,
-    DashboaredComponent
+    DashboaredComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
