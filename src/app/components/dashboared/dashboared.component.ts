@@ -8,6 +8,7 @@ import { AuthService } from 'src/app/shared/auth.service';
   styleUrls: ['./dashboared.component.css']
 })
 export class DashboaredComponent {
+  
   constructor(private router: Router,  private auth : AuthService) { }
 
   ngOnInit(): void {

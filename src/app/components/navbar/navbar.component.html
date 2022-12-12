@@ -1,24 +1,38 @@
-<mat-toolbar class="mat-toolbar" style="background-color:indigo; height: 7%;">
+<mat-toolbar class="mat-toolbar" color="primary" style="height: 7%;">
   <div style="color:white">
     SAMUEL-ELALA-CHATAPP
   </div>
   <div *ngIf="auth.logged()">
-    <button mat-button style="color:white">
-      <mat-icon>messages</mat-icon>
-    </button>
-    <button mat-button style="color:white">
-      <mat-icon>person</mat-icon><sup style="color:red"><mat-icon style="color:red">add</mat-icon>10</sup>
-    </button>
-    <button mat-button style="color:white">
-      <mat-icon>{{ notificationsRoute.icon }}</mat-icon>
-    </button>
+    <button mat-button color="warm"><mat-icon>home</mat-icon>
+      <!-- Include text description of the icon's meaning for screen-readers -->
+      <span class="cdk-visually-hidden">
+        Example with a home icon with overlaid badge showing the number 15
+      </span></button>
+    <button mat-button color="warm"><mat-icon matBadge="2" matBadgeColor="warn">messages</mat-icon>
+      <!-- Include text description of the icon's meaning for screen-readers -->
+      <span class="cdk-visually-hidden">
+        Example with a home icon with overlaid badge showing the number 15
+      </span></button>
+
+      <button mat-button color="warm"><mat-icon matBadge="2" matBadgeColor="warn">person</mat-icon>
+        <!-- Include text description of the icon's meaning for screen-readers -->
+        <span class="cdk-visually-hidden">
+          Example with a home icon with overlaid badge showing the number 15
+        </span></button>
+    
+      
+        <button mat-button color="warm"><mat-icon matBadge="2" matBadgeColor="warn">notifications</mat-icon>
+          <!-- Include text description of the icon's meaning for screen-readers -->
+          <span class="cdk-visually-hidden">
+            Example with a home icon with overlaid badge showing the number 15
+          </span></button>
 
     <button mat-button (click)="logout()" style="color:white">
       <mat-icon>logout</mat-icon>
     </button>
   </div>
   <div *ngIf="!auth.logged()">
-    <button mat-button (click)="logout()" style="color:white">
+    <button mat-button (click)="logout()" color="white">
       <mat-icon>login</mat-icon>
     </button>
   </div>

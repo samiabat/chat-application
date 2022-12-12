@@ -23,6 +23,7 @@ import {MatDividerModule} from '@angular/material/divider';
 import {MatCardModule} from '@angular/material/card';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { ReactiveFormsModule } from '@angular/forms';
+import {MatBadgeModule} from '@angular/material/badge';
 
 
 
@@ -48,7 +49,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatDividerModule,
     MatCardModule,
     MatFormFieldModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatBadgeModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

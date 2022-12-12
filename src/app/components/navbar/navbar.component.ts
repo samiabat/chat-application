@@ -8,6 +8,11 @@ import { AuthService } from 'src/app/shared/auth.service';
 })
 export class NavbarComponent {
   constructor(public auth : AuthService) { }
+  hidden = false;
+
+  toggleBadgeVisibility() {
+    this.hidden = !this.hidden;
+  }
 
   notificationsRoute = {
     link: '/dashboard',
