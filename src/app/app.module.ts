@@ -24,6 +24,7 @@ import {MatCardModule} from '@angular/material/card';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { ReactiveFormsModule } from '@angular/forms';
 import {MatBadgeModule} from '@angular/material/badge';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 
 
@@ -51,6 +52,7 @@ import {MatBadgeModule} from '@angular/material/badge';
     MatFormFieldModule,
     ReactiveFormsModule,
     MatBadgeModule,
+    MatGridListModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
