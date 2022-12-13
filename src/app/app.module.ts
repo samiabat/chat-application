@@ -25,6 +25,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import { ReactiveFormsModule } from '@angular/forms';
 import {MatBadgeModule} from '@angular/material/badge';
 import {MatGridListModule} from '@angular/material/grid-list';
+import { FriendRequestsComponent } from './components/friend-requests/friend-requests.component';
 
 
 
@@ -34,7 +35,8 @@ import {MatGridListModule} from '@angular/material/grid-list';
     LoginComponent,
     RegisterComponent,
     DashboaredComponent,
-    NavbarComponent
+    NavbarComponent,
+    FriendRequestsComponent
   ],
   imports: [
     BrowserModule,
