@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { AuthService } from 'src/app/shared/auth.service';
 
 @Component({
@@ -7,7 +8,7 @@ import { AuthService } from 'src/app/shared/auth.service';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
-  constructor(public auth : AuthService) { }
+  constructor(public auth : AuthService, private router: Router) { }
   hidden = false;
 
   toggleBadgeVisibility() {
@@ -28,6 +29,10 @@ export class NavbarComponent {
 
   logout(){
     this.auth.logout();
+  }
+
+  go (){
+    this.router.navigateByUrl('/friends');
   }
 
 

@@ -1,3 +1,4 @@
+<app-navbar></app-navbar>
 <div
   style="
     display: flex;
@@ -8,7 +9,7 @@
 >
   <div>all this people wants to be your frend</div>
   <div *ngFor="let index of [0, 1, 2, 3, 4, 5]">
-    <mat-card style="width: 500px; height: 100px">
+    <mat-card style="width: 500px; height: fit-content">
       <mat-card-header>
         <div style="display: flex">
           <img src="https://bit.ly/3Bx9hIt" mat-card-avatar />
@@ -17,7 +18,7 @@
         <div style="padding-left: 150px">
           <mat-card-actions>
             <button mat-raised-button color="primary">accept</button>
-            <button mat-raised-button color="warn">reject</button>
+            <button id="but" mat-raised-button color="warn">reject</button>
           </mat-card-actions>
         </div>
       </mat-card-header>
