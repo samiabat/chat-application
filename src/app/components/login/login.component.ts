@@ -27,12 +27,10 @@ export class LoginComponent {
   }
 
   login() {
-
     if(this.email == '') {
       alert('Please enter email');
       return;
     }
-
     if(this.password == '') {
       alert('Please enter password');
       return;

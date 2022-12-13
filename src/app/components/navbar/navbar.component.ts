@@ -31,8 +31,9 @@ export class NavbarComponent {
     this.auth.logout();
   }
 
-  go (){
+  go () {
     this.router.navigateByUrl('/friends');
+    console.log("freinds")
   }
 
 
